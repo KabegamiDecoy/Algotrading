@@ -1,0 +1,114 @@
+@font-face 
+    font-family: Roboto-bold
+    src: url(../fonts/Roboto-Bold.ttf)
+@font-face 
+    font-family: Roboto-light
+    src: url(../fonts/Roboto-Light.ttf)
+*
+    margin: 0
+    box-sizing: border-box
+.container
+    max-width: 1140px
+    margin: auto
+.row
+    display: flex
+a
+    text-decoration: none
+    color: #000000
+.attention
+    color: #06bee1
+.button
+    text-transform: uppercase
+    font-size: 14px
+    font-family: Roboto-bold
+    border-radius: 5px
+    border: none
+    color: #ffffff
+.button__primary
+    background: #0842b7
+.button__secondary
+    border: 1px solid #0842b7
+    background: transparent
+    color: #0842b7
+    /*Header Начало*/
+.header
+    position: relative
+    background: #ffffff
+    padding: 34px 0
+    z-index: 999
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__phone
+        font-family: Roboto-bold
+        &__light
+            font-family: Roboto-light
+            color: #777777
+.logo
+    display: flex
+    align-items: center
+    &__text
+     font-family: Roboto-bold
+     color: #000000
+     font-size: 16px
+     margin-left: 12px
+.nav
+    max-width: 510px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    &__link
+        font-family: Roboto-bold
+        color: #777777
+        font-size: 14px
+        &:hover
+            color: #000000
+            padding-bottom: 37px
+            margin-bottom: -39px
+            border-bottom: 3px solid #0056cf
+/*Hero Начало*/
+.hero
+    display: flex
+    margin-top: -88px
+    padding-top: 265px
+    padding-bottom: 260px
+    background: url('../img/hero-bg.png') no-repeat center / cover
+    &__block
+        flex-basis: 65%
+        &__title
+            display: flex
+            flex-direction: column
+            margin-bottom: 40px
+        &__description
+            display: flex
+            align-items: center
+            margin-bottom: 277px
+        &__buttons
+            display: flex
+            flex-direction: column
+            margin-right: 55px
+    &__title
+        font-family: Roboto-light
+        font-size: 70px
+        line-height: 45px
+        margin-bottom: 30px
+        &__secondary
+            font-size: 36px
+    &__description
+        font-family: Roboto-light
+        max-width: 350px
+    &__info
+        font-family: Roboto-light
+        max-width: 330px
+        font-size: 24px
+    &__button
+        padding: 18px 40px
+        margin-bottom: 12px
+        &:last-child
+            margin: 0
+.why__robot
+    font-family: Roboto-light
+    padding: 22px 25px
+    background: #ffffff
+    font-size: 26px
