@@ -472,6 +472,243 @@ a {
           align-items: center;
   -ms-flex-preferred-size: 26%;
       flex-basis: 26%;
+  /*Начало training*/
+}
+
+.training {
+  padding-top: 130px;
+  padding-bottom: 118px;
+  background: url("../img/training-bg.jpg") no-repeat center/cover;
+  /*Начало Advantages*/
+}
+
+.training__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.training__text {
+  color: #ffffff;
+  max-width: 460px;
+  font-family: Roboto-bold;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.training__button {
+  border: 1px solid #ffffff;
+  background: transparent;
+  padding: 13px 35px;
+}
+
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #eaf1f7;
+  /*Начало Cost*/
+}
+
+.advantages__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantages__block__card {
+  max-width: 1070px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.advantages__block__card:last-child {
+  margin-bottom: 0;
+}
+
+.advantages__title {
+  font-family: Roboto-light;
+  font-weight: normal;
+  font-size: 36px;
+  margin-bottom: 55px;
+}
+
+.advantages__subtitle {
+  font-size: 25px;
+  font-family: Roboto-bold;
+  margin-bottom: 30px;
+}
+
+.advantages__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 330px;
+  width: 100%;
+  text-align: center;
+}
+
+.advantages__card__img {
+  margin-bottom: 20px;
+}
+
+.advantages__card__title {
+  font-family: Roboto-bold;
+  font-size: 17px;
+}
+
+.advantages__card__description {
+  font-family: Roboto-light;
+}
+
+.advantages__card__description-profi {
+  max-width: 200px;
+}
+
+.advantages__card__description-practice {
+  max-width: 295px;
+}
+
+.advantages__card__description-author {
+  max-width: 250px;
+}
+
+.advantages__card__description-data {
+  max-width: 250px;
+}
+
+.advantages__card__description-own {
+  max-width: 300px;
+}
+
+.cost {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.cost__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cost__block__access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 150px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 70px;
+}
+
+.cost__block__card {
+  max-width: 1070px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cost__title {
+  font-family: Roboto-bold;
+  font-size: 34px;
+  margin-bottom: 35px;
+}
+
+.cost__title__normal {
+  font-family: Roboto-light;
+  font-weight: normal;
+}
+
+.cost__description {
+  max-width: 350px;
+  font-family: Roboto-light;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.cost__card {
+  max-width: 390px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-right: 1px solid #eaf1f7;
+}
+
+.cost__card:last-child {
+  border-right: none;
+}
+
+.cost__card__title {
+  font-family: Roboto-bold;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.cost__card__price {
+  font-family: Roboto-bold;
+  font-size: 24px;
+  margin-bottom: 45px;
+}
+
+.cost__card__access {
+  font-family: Roboto-light;
+  max-width: 220px;
+}
+
+.cost__button {
+  padding: 16px 60px;
 }
 
 @media screen and (max-width: 1600px) {
