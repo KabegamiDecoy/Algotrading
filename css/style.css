@@ -14,6 +14,7 @@
   src: url(../fonts/Roboto-Thin.ttf);
 }
 
+/*Общие настройки*/
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -58,9 +59,9 @@ a {
   border: 1px solid #0842b7;
   background: transparent;
   color: #0842b7;
-  /*Header Начало*/
 }
 
+/*Header Начало*/
 .header {
   position: relative;
   background: #ffffff;
@@ -129,7 +130,7 @@ a {
   border-bottom: 3px solid #0056cf;
 }
 
-/*Hero Начало*/
+/*Начало Hero*/
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,7 +510,107 @@ a {
   padding: 13px 35px;
 }
 
+/*Начало Steps__demo*/
+.steps__demo {
+  padding-top: 115px;
+  padding-bottom: 120px;
+}
+
+.steps__demo__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steps__demo__title {
+  font-family: Roboto-light;
+  font-weight: normal;
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+.steps__demo__title--bold {
+  font-family: Roboto-bold;
+}
+
+.steps__demo__description {
+  font-family: Roboto-light;
+  font-size: 16px;
+  text-align: center;
+  max-width: 355px;
+}
+
+.steps__demo__map--study {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steps__demo__step {
+  background: url("../img/steps-arrow-down.png") no-repeat center top 50%;
+  font-family: Roboto-light;
+  font-size: 24px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.steps__demo__video {
+  margin-top: 85px;
+  margin-bottom: 80px;
+  padding: 162px 441px;
+  background: url("../img/steps-demo-video.jpg") no-repeat center;
+}
+
+.steps__demo__example--work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steps__demo__example--work__title {
+  font-family: Roboto-bold;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.steps__demo__example--work__description {
+  font-family: Roboto-light;
+  font-size: 16px;
+  text-align: center;
+  max-width: 565px;
+  margin-bottom: 45px;
+}
+
+.steps__demo__button {
+  padding: 14px 40px;
+}
+
 /*начало Study*/
+.study {
+  margin-top: 115px;
+}
+
 .study__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,7 +629,7 @@ a {
 .study__block::before {
   content: '';
   position: absolute;
-  width: 1140px;
+  width: 100%;
   height: 0;
   bottom: 0;
   border: 1px solid #eaf1f7;
@@ -569,7 +670,6 @@ a {
   color: #ffffff;
   font-size: 24px;
   margin-bottom: 30px;
-  max-width: 185px;
 }
 
 .study__info__description {
@@ -591,7 +691,7 @@ a {
 }
 
 .study__info__help {
-  padding-top: 151px;
+  padding-top: 187px;
   padding-bottom: 43px;
   padding-left: 55px;
   padding-right: 240px;
@@ -1182,6 +1282,139 @@ a {
   }
   .info {
     margin-top: -240px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 962px;
+  }
+  .hero__title {
+    line-height: 1;
+  }
+  .info__title {
+    font-size: 260px;
+  }
+  .study__info {
+    max-width: 982px;
+  }
+  .study__info__test {
+    padding-right: 125px;
+    padding-top: 120px;
+  }
+  .study__info__help {
+    padding-top: 120px;
+    padding-right: 135px;
+  }
+  .study__block__cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .questions__block__input {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .questions__button {
+    margin-top: 30px;
+    padding: 17px 120px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+  .nav {
+    max-width: 350px;
+  }
+  .hero__block {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+  .info__title {
+    font-size: 180px;
+  }
+  .info__subtitle {
+    font-size: 20px;
+  }
+  .info__description {
+    max-width: 210px;
+  }
+  .info__tools {
+    max-width: 450px;
+  }
+  .info__profit {
+    padding-bottom: 45px;
+  }
+  .calculator__row::before {
+    width: 480px;
+  }
+  .steps__demo__video {
+    padding: 162px 352px;
+  }
+  .study__info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .study__info__test {
+    margin-bottom: 30px;
+    padding-right: 305px;
+    padding-top: 187px;
+  }
+  .study__info__help {
+    padding-top: 187px;
+    padding-left: 240px;
+    padding-right: 55px;
+    text-align: right;
+  }
+  .study__block__cards {
+    max-width: 768px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .study__card {
+    max-width: 260px;
+  }
+  .questions__block__input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .questions__input {
+    margin-bottom: 25px;
+  }
+  .questions__button {
+    margin-top: 0;
+    padding: 17px 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 556px;
+  }
+  .nav {
+    display: none;
+  }
+  .hero {
+    padding-bottom: 200px;
+  }
+  .info {
+    display: none;
+  }
+  .create {
+    padding-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
