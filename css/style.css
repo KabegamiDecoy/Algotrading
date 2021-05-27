@@ -510,6 +510,32 @@ a {
   padding: 13px 35px;
 }
 
+/*Начало Benefits*/
+.benefits__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefits__title {
+  font-family: Roboto-light;
+  font-size: 36px;
+  font-weight: normal;
+  max-width: 465px;
+  text-align: center;
+}
+
+.benefits__title--bold {
+  font-family: Roboto-bold;
+}
+
 /*Начало Steps__demo*/
 .steps__demo {
   padding-top: 115px;
@@ -860,6 +886,7 @@ a {
 .advantages__card__title {
   font-family: Roboto-bold;
   font-size: 17px;
+  margin-bottom: 10px;
 }
 
 .advantages__card__description {
@@ -868,6 +895,10 @@ a {
 
 .advantages__card__description-profi {
   max-width: 200px;
+}
+
+.advantages__card__description__sequence {
+  max-width: 320px;
 }
 
 .advantages__card__description-practice {
@@ -948,6 +979,150 @@ a {
 
 .start__study__button {
   padding: 16px 100px;
+}
+
+/*Начало Comments*/
+.comments {
+  padding-top: 115px;
+}
+
+.comments__container {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+}
+
+.comments__title {
+  font-family: Roboto-light;
+  font-weight: normal;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 70px;
+}
+
+.comments__title--bold {
+  font-family: Roboto-bold;
+}
+
+.comments__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/video-plug.jpg") no-repeat center;
+}
+
+.comments__play--video {
+  padding: 161px 441px;
+}
+
+.comments__name {
+  font-family: Roboto-bold;
+  font-size: 22px;
+  margin-top: 75px;
+  margin-bottom: 40px;
+}
+
+.comments__description {
+  font-family: Roboto-light;
+  text-align: center;
+  max-width: 520px;
+}
+
+.comments__swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comments__result {
+  background: url("../img/result-bg.png") no-repeat bottom left;
+  padding-top: 125px;
+  padding-bottom: 120px;
+}
+
+.comments__result__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.result__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.result__title {
+  font-family: Roboto-light;
+  font-weight: normal;
+  font-size: 35px;
+  max-width: 270px;
+  margin-bottom: 35px;
+}
+
+.result__title--bold {
+  font-family: Roboto-bold;
+}
+
+.result__description {
+  max-width: 245px;
+  font-family: Roboto-light;
+}
+
+.result__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 655px;
+  width: 100%;
+}
+
+.result__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 265px;
+}
+
+.result__card__title {
+  font-family: Roboto-light;
+  font-size: 24px;
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+
+.result__card__description {
+  font-family: Roboto-light;
 }
 
 /*Начало Cost*/
@@ -1415,6 +1590,35 @@ a {
   }
   .create {
     padding-top: 0;
+  }
+  .calculator__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .study__card {
+    margin-bottom: 50px;
+  }
+  .study__process__block__cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .study__process__card {
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer__links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__links__block::before {
+    display: none;
+  }
+  .footer__description {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
