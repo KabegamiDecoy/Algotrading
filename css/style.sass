@@ -298,20 +298,55 @@ a
 
 /*Начало Benefits*/
 .benefits
+    padding-top: 120px
+    background: #eaf1f7 url('../img/benefits-bg.png') no-repeat center bottom
     &__block
         display: flex
         flex-direction: column
         align-items: center
+        position: relative
     &__title
         font-family: Roboto-light
         font-size: 36px
         font-weight: normal
         max-width: 465px
         text-align: center
+        margin-bottom: 75px
         &--bold
             font-family: Roboto-bold
-
-
+    &__swiper
+        &-wrapper
+            display: flex
+            justify-content: space-between
+            
+        &-slide
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding-left: 103px
+            padding-right: 103px
+            padding-top: 406px
+            padding-bottom: 120px
+            
+            background: url('../img/benefits-phone.png') no-repeat center
+        &-container
+            max-width: 600px
+        &-title
+            font-family: Roboto-bold
+            font-size: 24px
+            margin-bottom: 35px
+        &-description
+            font-family: Roboto-light
+            font-size: 16px
+            text-align: center
+            max-width: 160px
+        &-button
+            &-prev
+                top: 65%
+                left: 25%
+            &-next
+                top: 65%
+                right: 25%
 /*Начало Steps__demo*/
 .steps
     &__demo
@@ -847,16 +882,13 @@ a
     .container
         max-width: 962px
 
-
     .hero
         &__title
             line-height: 1
 
-
     .info
         &__title
             font-size: 260px
-
 
     .study
         &__info
@@ -871,6 +903,13 @@ a
             &__cards
                 justify-content: space-around
 
+    .benefits
+        &__swiper
+            &-button
+                &-prev
+                    left: 15%
+                &-next
+                    right: 15%
 
     .questions
         &__block
@@ -883,7 +922,6 @@ a
 @media screen and ( max-width:992px  )
     .container
         max-width: 768px
-
 
     .nav
         max-width: 350px
@@ -916,7 +954,12 @@ a
     .steps
         &__demo
             &__video
+                margin: auto
+                margin-top: 85px
+                margin-bottom: 80px
                 padding: 162px 352px
+                max-width: 768px
+                
 
 
     .study
@@ -940,6 +983,10 @@ a
         &__card
             max-width: 260px
 
+    .comments
+        padding-bottom: 100px
+        &__result
+            display: none
 
     .questions
         &__block
@@ -973,7 +1020,18 @@ a
     .calculator
         &__row
             flex-wrap: wrap
-            justify-content: space-between
+            justify-content: space-around
+        &__title
+            text-align: center
+            margin-bottom: 30px
+        &__subtitle
+            text-align: center
+            margin: auto
+            margin-bottom: 20px
+    .col-37
+        flex-basis: 51%
+    .col-26
+        flex-basis: 48%
 
     .study
         &__card
@@ -989,6 +1047,16 @@ a
                 max-width: 200px
                 width: 100%
                 margin-bottom: 30px
+
+    .benefits
+        &__swiper
+            &-container
+                max-width: 556px
+            &-button
+                &-prev
+                    left: 0%
+                &-next
+                    right: 0%
 
     .footer
         &__links

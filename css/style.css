@@ -511,6 +511,11 @@ a {
 }
 
 /*Начало Benefits*/
+.benefits {
+  padding-top: 120px;
+  background: #eaf1f7 url("../img/benefits-bg.png") no-repeat center bottom;
+}
+
 .benefits__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -522,6 +527,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .benefits__title {
@@ -530,10 +536,65 @@ a {
   font-weight: normal;
   max-width: 465px;
   text-align: center;
+  margin-bottom: 75px;
 }
 
 .benefits__title--bold {
   font-family: Roboto-bold;
+}
+
+.benefits__swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.benefits__swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-top: 406px;
+  padding-bottom: 120px;
+  background: url("../img/benefits-phone.png") no-repeat center;
+}
+
+.benefits__swiper-container {
+  max-width: 600px;
+}
+
+.benefits__swiper-title {
+  font-family: Roboto-bold;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.benefits__swiper-description {
+  font-family: Roboto-light;
+  font-size: 16px;
+  text-align: center;
+  max-width: 160px;
+}
+
+.benefits__swiper-button-prev {
+  top: 65%;
+  left: 25%;
+}
+
+.benefits__swiper-button-next {
+  top: 65%;
+  right: 25%;
 }
 
 /*Начало Steps__demo*/
@@ -1485,6 +1546,12 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .benefits__swiper-button-prev {
+    left: 15%;
+  }
+  .benefits__swiper-button-next {
+    right: 15%;
+  }
   .questions__block__input {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1527,7 +1594,11 @@ a {
     width: 480px;
   }
   .steps__demo__video {
+    margin: auto;
+    margin-top: 85px;
+    margin-bottom: 80px;
     padding: 162px 352px;
+    max-width: 768px;
   }
   .study__info {
     -ms-flex-wrap: wrap;
@@ -1556,6 +1627,12 @@ a {
   }
   .study__card {
     max-width: 260px;
+  }
+  .comments {
+    padding-bottom: 100px;
+  }
+  .comments__result {
+    display: none;
   }
   .questions__block__input {
     -webkit-box-orient: vertical;
@@ -1594,9 +1671,25 @@ a {
   .calculator__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .calculator__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .calculator__subtitle {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .col-37 {
+    -ms-flex-preferred-size: 51%;
+        flex-basis: 51%;
+  }
+  .col-26 {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .study__card {
     margin-bottom: 50px;
@@ -1609,6 +1702,15 @@ a {
     max-width: 200px;
     width: 100%;
     margin-bottom: 30px;
+  }
+  .benefits__swiper-container {
+    max-width: 556px;
+  }
+  .benefits__swiper-button-prev {
+    left: 0%;
+  }
+  .benefits__swiper-button-next {
+    right: 0%;
   }
   .footer__links {
     -ms-flex-wrap: wrap;
