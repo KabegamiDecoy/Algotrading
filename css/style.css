@@ -590,11 +590,25 @@ a {
 .benefits__swiper-button-prev {
   top: 65%;
   left: 25%;
+  outline: none;
+  background: url("../img/button-prev.png") no-repeat;
+  width: 50px;
+}
+
+.benefits__swiper-button-prev::after {
+  content: '';
 }
 
 .benefits__swiper-button-next {
   top: 65%;
   right: 25%;
+  outline: none;
+  width: 55px;
+  background: url("../img/button-next.png") no-repeat;
+}
+
+.benefits__swiper-button-next::after {
+  content: '';
 }
 
 /*Начало Steps__demo*/
@@ -1634,6 +1648,9 @@ a {
   .comments__result {
     display: none;
   }
+  .comments__play--video {
+    padding: 161px 352px;
+  }
   .questions__block__input {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1712,6 +1729,16 @@ a {
   .benefits__swiper-button-next {
     right: 0%;
   }
+  .steps__demo__video {
+    margin: auto;
+    margin-top: 85px;
+    margin-bottom: 80px;
+    padding: 122px 252px;
+    background-size: cover;
+  }
+  .comments__play--video {
+    padding: 121px 252px;
+  }
   .footer__links {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1721,6 +1748,21 @@ a {
   }
   .footer__description {
     display: none;
+  }
+}
+
+@media screen and (max-width: 556px) {
+  .container {
+    max-width: 425px;
+  }
+  .create {
+    display: none;
+  }
+  .benefits {
+    display: none;
+  }
+  .steps__demo__video {
+    padding: 61px 162px;
   }
 }
 /*# sourceMappingURL=style.css.map */

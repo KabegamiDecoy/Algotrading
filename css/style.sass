@@ -344,9 +344,19 @@ a
             &-prev
                 top: 65%
                 left: 25%
+                outline: none
+                background: url('../img/button-prev.png') no-repeat
+                width: 50px
+                &::after
+                    content: ''
             &-next
                 top: 65%
                 right: 25%
+                outline: none
+                width: 55px
+                background: url('../img/button-next.png') no-repeat
+                &::after
+                    content: ''
 /*Начало Steps__demo*/
 .steps
     &__demo
@@ -987,6 +997,9 @@ a
         padding-bottom: 100px
         &__result
             display: none
+        &__play
+            &--video
+                padding: 161px 352px
 
     .questions
         &__block
@@ -1058,6 +1071,20 @@ a
                 &-next
                     right: 0%
 
+    .steps
+        &__demo
+            &__video
+                margin: auto
+                margin-top: 85px
+                margin-bottom: 80px
+                padding: 122px 252px
+                background-size: cover
+                
+    .comments
+        &__play
+            &--video
+                padding: 121px 252px
+
     .footer
         &__links
             flex-wrap: wrap
@@ -1066,3 +1093,14 @@ a
                     display: none
         &__description
             display: none
+@media screen and ( max-width:556px  )
+    .container
+        max-width: 425px
+    .create
+        display: none
+    .benefits
+        display: none
+    .steps
+        &__demo
+            &__video
+                padding: 61px 162px
